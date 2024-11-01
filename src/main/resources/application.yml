@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azure-crud-server.database.windows.net:1433;database=azure-crud-db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: ajay123
+    password: root123@
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      ddl-auto: update
+
+server:
+     port: 9091
